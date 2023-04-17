@@ -106,36 +106,104 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin-left: 30px;
 }
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.75em;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #39FF14;
+}
+
+
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-
+  max-width: 1200px;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
+.wrapper-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
-  font-size: 1em;
-  height: 300px;
-  width: 30%;
+  font-size: 0.75em;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  flex-flow: row wrap;
+  width: 30%;
 }
 
-.div-1, .div-2 {
+#div-1, #div-2 {
   border-right: 0.5px solid white;
-
+  padding-right: 20px;
 }
 
 
+#div-1 {
+  flex-basis: 400px;
+}
 
+#div-2 {
+  flex-basis: 400px;
+}
+
+#div-3 {
+  flex-basis: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 0.5px solid white;
+  width: 100%;
+}
+
+footer i {
+  padding: 30px 20px 0 0;
+  display: flex;
+  align-items:center;
+  color: #39FF14;
+}
+
+p span {
+  color: #39FF14;
+}
+
+h1 span {
+  color: #39FF14;
+}
 
 /* ==========================================================================
    Helper classes
@@ -300,3 +368,5 @@ body {
         page-break-after: avoid;
     }
 }
+
+{align-self: }
